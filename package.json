@@ -1,0 +1,36 @@
+{
+  "name": "load-map",
+  "version": "1.0.0",
+  "description": "地图SDK加载器，支持腾讯地图和百度地图，可用于vue和react项目。",
+  "author": "lyd",
+  "license": "MIT",
+  "main": "lib/loadMap.js",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lydxwj/LoadMap.git"
+  },
+  "homepage": "https://github.com/lydxwj/LoadMap",
+  "keywords": [
+    "map",
+    "LoadMap",
+    "TMap",
+    "qqMap"
+  ],
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "cross-env NODE_ENV=develop rollup -c --watch",
+    "pub": "cross-env NODE_ENV=production rollup -c",
+    "prepare": "npm run pub"
+  },
+  "devDependencies": {
+    "rollup": "^2.29.0",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@rollup/plugin-babel": "^5.2.1",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "cross-env": "^7.0.2"
+  }
+}
